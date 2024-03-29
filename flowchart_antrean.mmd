@@ -1,9 +1,13 @@
 flowchart TB
   Mulai-->Pengunjung
   Pengunjung-->SistemAntrean
+  SistemAntrean-->Printer
   subgraph Pengunjung
     Orang-->p1("`Pilih Layanan`")
   end  
   subgraph SistemAntrean
-    Sistem-->Layanan-->s1("`Nomor Terakhir + 1`")-->Printer-->Cetak
+    Sistem-->Layanan-->s1("`Nomor Terakhir + 1`")-->Simpan-->Cetak
+  end
+  subgraph Printer
+    Nomor-->Cetak
   end
