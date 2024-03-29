@@ -1,9 +1,10 @@
 flowchart TB
   Mulai --> Pengunjung
+  Pengunjung --> Sistem
   subgraph Pengunjung
     direction TB
     Orang --> p1("`Pilih Layanan`")
-  end
-  Pengunjung --> Mesin
-  subgraph Mesin
+  end  
+  subgraph Sistem Antrean
+    direction TB
   end
