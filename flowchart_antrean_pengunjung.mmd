@@ -1,14 +1,17 @@
-flowchart TB
-  Mulai-->Pengunjung
-  Pengunjung-->SistemAntrean
-  SistemAntrean-->Printer
-  Printer-->Selesai
+flowchart TB  
   subgraph Pengunjung
     p1("Pilih Layanan")
   end  
   subgraph SistemAntrean
-    Layanan-->s1("Nomor Terakhir + 1")-->s2("Simpan ke Database")-->db[(Database)]-->s3("Cetak ke Printer")
+    Layanan-->s1("Nomor Terakhir + 1")-->s2("Simpan ke Database")-->s3("Cetak ke Printer")
   end
   subgraph Printer
     Cetak-->Nomor
   end
+  subgraph Database
+    db[(Antrean)]
+  end
+  Mulai-->Pengunjung
+  Pengunjung-->SistemAntrean
+  SistemAntrean-->Printer
+  Printer-->Selesai
