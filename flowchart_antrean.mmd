@@ -3,7 +3,7 @@ flowchart TB
   Pengunjung-->SistemAntrean
   SistemAntrean-->Printer
   subgraph Pengunjung
-    Orang-->p1("Pilih Layanan")
+    p1("Pilih Layanan")
   end  
   subgraph SistemAntrean
     Layanan-->s1("Nomor Terakhir + 1")-->s2("Simpan ke Database")-->s3("Cetak ke Printer")
