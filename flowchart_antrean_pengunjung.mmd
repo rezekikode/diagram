@@ -3,6 +3,7 @@ flowchart TB
     p1("Pilih Layanan")
   end  
   subgraph SistemAntrean
+    direction TB
     Layanan-->s1("Nomor Terakhir + 1")-->s2("Simpan ke Database")-->s3("Cetak ke Printer")
   end
   subgraph Printer
