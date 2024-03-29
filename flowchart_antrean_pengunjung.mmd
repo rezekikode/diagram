@@ -7,13 +7,13 @@ flowchart TB
     Layanan-->s1("Nomor Terakhir + 1")-->s2("Simpan ke Database")-->s3("Cetak ke Printer")
   end
   subgraph Printer
-    Cetak-->Nomor
+    Nomor
   end
   subgraph Database
     db[(Antrean)]
   end
   Mulai-->Pengunjung
   Pengunjung-->SistemAntrean
-  SistemAntrean-->Database
-  SistemAntrean-->Printer
+  SistemAntrean--Simpan-->Database
+  SistemAntrean--Cetak-->Printer
   Printer-->Selesai
