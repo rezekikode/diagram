@@ -6,7 +6,7 @@ flowchart TB
     Orang-->p1("`Pilih Layanan`")
   end  
   subgraph SistemAntrean
-    Sistem-->Layanan-->s("`Nomor Terakhir + 1`")-->s("`Simpan ke Database`")-->s("Cetak ke Printer`")
+    Sistem-->Layanan-->s1("`Nomor Terakhir + 1`")-->s2("`Simpan ke Database`")-->s3("Cetak ke Printer`")
   end
   subgraph Printer
     Printer-->Cetak-->Nomor
