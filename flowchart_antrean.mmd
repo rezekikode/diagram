@@ -2,7 +2,7 @@ flowchart TB
   Mulai-->Pengunjung
   Pengunjung-->SistemAntrean
   subgraph Pengunjung
-    Orang-->p1("`Pilih Layanan`")-->Layanan
+    Orang-->p1("`Pilih Layanan`")-->Layanan-->SistemAntrean
   end  
   subgraph SistemAntrean
     Layanan-->s1("`Nomor Terakhir + 1`")
