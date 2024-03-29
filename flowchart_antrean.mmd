@@ -2,9 +2,8 @@ flowchart TB
   Mulai --> Pengunjung
   Pengunjung --> SistemAntrean
   subgraph Pengunjung
-    direction TB
     Orang --> p1("`Pilih Layanan`")
   end  
   subgraph SistemAntrean
-    direction TB
+    Sistem -> s1("`Ambil Nomor Terakhir Layanan`")
   end
